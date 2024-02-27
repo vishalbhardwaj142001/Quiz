@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Time</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <!-- 1st page -->
+        <div id="inner">
+            <img src="quiz-removebg-preview.png" id="quizImg" height="100px">
+            <div id="startBtn">Start Now <span class="arrow" id="arrow1">></span><span class="arrow" id="arrow2">></span><span class="arrow" id="arrow3">></span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="score">Highest Score : <span id="scoreSpan"> 00</span>/ 25</div>
+            <br>
+            <br>
+            <div id="tagline0">Made with <img src="love.png" width="20px" height="20px" id="love0"> by Vishal Bhardwaj & Mandeep Singh
+            </div>
+        </div>
+        <!-- 2nd page -->
+        <div id="inner2">
+            <img src="quiz-removebg-preview.png" id="quizImg2" height="60px">
+            <img src="s2.png" height="35px" id="speak" class="speaker">
+            <img src="s1.png" height="35px" id="mute" class="speaker" style="display: none">
+            <br>
+            <div id="quesCounter"><span id="num">01</span>/25</div>
+            <div id="ques">Inside which HTML element do we put the Javascript?</div>
+            <br>
+            <div id="stopwatch">00:<span id="counter">30</span></div>
+            <br>
+            <div id="option">
+                <div class="option5" id="option1"></div>
+                <div class="icon" id="icon1"></div>
+                <br>
+                <div class="option5" id="option2"></div>
+                <div class="icon" id="icon2"></div>
+                <br>
+                <div class="option5" id="option3"></div>
+                <div class="icon" id="icon3"></div>
+                <br>
+                <div class="option5" id="option4"></div>
+                <div class="icon" id="icon4"></div>
+            </div>
+            <br>
+            <div id="prev"> < Prev</div>
+            <div id="next">Next > </div>
+            <div id="show">Show More</div>
+            <br>
+            <div id="tagline1">Made with <img src="love.png" width="18px" height="18px" id="love1"> by Vishal Bhardwaj & Mandeep Singh</div>
+        </div>
+            <div id="inner3">
+                <h1 id="heading">Questions Index</h1>
+                <div id="allQues1">
+                    <div class="q0" id="q1"></div>
+                    <div class="q0" id="q2"></div>
+                    <div class="q0" id="q3"></div>
+                    <div class="q0" id="q4"></div>
+                    <div class="q0" id="q5"></div>
+                </div>
+                <br>
+                <div id="allQues2">
+                    <div class="q0" id="q6"></div>
+                    <div class="q0" id="q7"></div>
+                    <div class="q0" id="q8"></div>
+                    <div class="q0" id="q9"></div>
+                    <div class="q0" id="q10"></div>
+                </div>
+                <br>
+                <div id="allQues3">
+                    <div class="q0" id="q11"></div>
+                    <div class="q0" id="q12"></div>
+                    <div class="q0" id="q13"></div>
+                    <div class="q0" id="q14"></div>
+                    <div class="q0" id="q15"></div>
+                </div>
+                <div id="allQues4">
+                    <div class="q0" id="q16"></div>
+                    <div class="q0" id="q17"></div>
+                    <div class="q0" id="q18"></div>
+                    <div class="q0" id="q19"></div>
+                    <div class="q0" id="q20"></div>
+                </div>
+                <br>
+                <div id="allQues5">
+                    <div class="q0" id="q21"></div>
+                    <div class="q0" id="q22"></div>
+                    <div class="q0" id="q23"></div>
+                    <div class="q0" id="q24"></div>
+                    <div class="q0" id="q25"></div>
+                </div>
+                <br>
+                <br>
+                <div id="submit1">Submit</div>
+                <div id="review">Review</div>
+            </div>
+
+            <div id="inner4">
+                <img src="quiz-removebg-preview.png" id="quizImg4" height="70px">
+                <br>
+                <div id="result">Result</div>
+                <br>
+                <br>
+                <br>
+                <div id="Greenline1"></div>
+                <div id="Greenline2"></div>
+                <div id="scoreResult">
+                    <div id="dotGreen"></div>
+                    <div id="green"></div>
+                    <div id="dotRed"></div>
+                </div>
+                <div id="Redline1"></div>
+                <div id="Redline2"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="greenScore">0 %</div>
+                <div id="redScore">0 %</div>
+                <br>
+                <br>
+                <div id="scoreDiv"><span id="totalScore">00</span> / 25</div>
+                <br>
+                <br>
+                <div id="feedback">"Keep learning, you have a good score!"</div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="retry"> <<< Retry</div>
+                <br>
+                <br>
+                <br>
+                <div id="shot">Take Screenshot >>></div>
+                <br>
+                <br>
+                <br>
+                <div id="endLine">Share your score :</div>
+                <div id="media">
+                    <a href="https://in.linkedin.com/" target="_blank"><img src="linkedin.png" alt="" width="30px" height="30px" id="linkedin"></a>                    
+                    <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="" width="29px" height="29px" id="twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="" width="23px" height="23px" id="instagram"></a>
+                </div>
+                <br>
+                <div id="tagline2">Made with <img src="love.png" width="18px" height="18px" id="love2"> by Vishal Bhardwaj & Mandeep Singh</div>
+            </div>
+        </div>
+
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
